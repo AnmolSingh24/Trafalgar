@@ -15,6 +15,9 @@ const router = express.Router();
 //     res.send("Hello Admin, You are logged in and you an delete all account");
 // })
 
+//Create
+// router.create(":/id", verifyUser, createUser);
+
 //Update
 router.put("/:id", verifyUser, updatedUser);
 
