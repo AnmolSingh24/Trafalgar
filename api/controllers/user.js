@@ -29,7 +29,7 @@ export const updatedUser = async (req, res, next) => {
 
 export const deleteUser = async (req, res, next) => {
     try {
-        await new User.findByIdAndDelete(req.params.id);
+        await User.findByIdAndDelete(req.params.id);
         res.status(200).json("User Deleted")
 
     } catch (err) {
